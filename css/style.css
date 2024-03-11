@@ -23,7 +23,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 12px;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding:
@@ -208,6 +208,7 @@ header .navbar ul li a:hover {
     flex: 1 1 48rem;
     padding: 2rem 1rem;
     padding-left: 6rem;
+    max-width: 35%;
 }
 
 .about .row .info h3 {
@@ -230,7 +231,7 @@ header .navbar ul li a:hover {
 }
 
 .about .row .counter .box {
-    width: 20rem;
+    width: 35rem;
     background: #D7263D;
     text-align: center;
     padding: 2rem;
@@ -256,7 +257,7 @@ header .navbar ul li a:hover {
     padding-left: 3rem;
 }
 .formation .box-container .box {
-    width: 27rem;
+    width: 35rem;
     margin: 4rem 1rem;
     padding-left: 4rem;
     border-left: .2rem solid #fff;
