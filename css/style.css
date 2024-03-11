@@ -1,21 +1,22 @@
-@import url('https://fonts.googleapis.com/css2 ?family=Nunito:wght@200;300;400;600&display=swap');
 
+
+/* :root permet de cibler tout le document HTML à sa racine */
 :root{
     --orange:orange
 }
 
 *{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Kalam', cursive;    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
+/* Lorsque je sélectionne les éléments à l'aide du curseur */
 *::selection {
     background: var(--orange);
     color: #333;
@@ -24,8 +25,12 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding:
+    var(--scroll-padding, 5rem);
 }
 
+/* barre de défilement */
 html::-webkit-scrollbar {
     width: 1.4rem;
 }
@@ -38,10 +43,24 @@ html::-webkit-scrollbar-thumb {
     background: var(--orange);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
 body {
+    
     background: #1B998B;
     overflow-x: hidden;
     padding-left: 35rem;
+}
+
+.parallax img {
+    border-radius: 100%;
+    max-width: 15rem;    
+   
 }
 
 section {
@@ -99,7 +118,7 @@ header {
 header .user img{
     height: 17rem;
     width: 17rem;
-    border-radius: 50%;
+    border-radius: 100%;
     object-fit: cover;
     margin-bottom: 1rem;
     border: .7rem solid var(--orange);

@@ -5,16 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>responsive personal portfolio website</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
 <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- custom css file link -->  
-<link rel="stylesheet" href="css/style.css">  
+    <!-- custom css file link -->  
+    <link rel="stylesheet" href="css/style.css">  
 </head>
 <body>
-<!-- header section starts -->
-<header>
+    <main>
+        <!-- body parallax starts -->
+        <div class="parallax" >
+            <img src="/images/randonneuse.png" id="rando" alt="randonneuse">
+            <img src="/images/sphère monde.png" id="monde" alt="monde" >
+        </div>
+            
+            
+            <!-- body parallax ends -->
+    <!-- header section starts -->
+<header id="bigMenu">
 <div class="user">
     <img src="images/photo_profil.jpg" alt="">
     <h3 class="name">Géraldine Pérez</h3>
@@ -30,7 +39,7 @@
         <li><a href="#contact">contact</a></li>
 
     </ul>
-</nav>
+    </nav>
 </header>
 <!-- header section ends -->
 
@@ -42,8 +51,8 @@
     <h1>Je suis <span>Géraldine Pérez</span></h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consectetur tempore pariatur velit debitis fugit unde maiores modi quaerat, est blanditiis quibusdam corrupti aliquam aspernatur autem nesciunt alias, esse quia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ipsum.</p>
     <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
-
-
+    
+    
 </section>
 
 <!-- home section ends -->
@@ -51,32 +60,32 @@
 <!-- about section starts -->
 
 <section class="about" id="about">
-<h1 class="heading"> <span>about</span> me</h1>
-<div class="row">
-<div class="info">
-    <h3> <span> Mon nom : </span>Géraldine Pérez</h3>
-    <h3> <span> Age : </span>42 ans</h3>
-    <h3> <span> Formation : </span>Ecole Oclock</h3>
-    <h3> <span> Spécialité : </span>développeur web fullstack</h3>
-    <h3> <span> Langues : </span>Français, espagnol, un soupçon d'anglais</h3>
-    <a href="#"> <button class="btn"> Télecharger le CV <i class="fas fa-download"></i> </button></a>
-</div>
-<div class="counter">
-    <div class="box">
-        <span>17+</span>
-        <h3>années d'activité professionnalle dans la santé</h3>
+    <h1 class="heading"> <span>about</span> me</h1>
+    <div class="row">
+        <div class="info">
+            <h3> <span> Mon nom : </span>Géraldine Pérez</h3>
+            <h3> <span> Age : </span>42 ans</h3>
+            <h3> <span> Formation : </span>Ecole Oclock</h3>
+            <h3> <span> Spécialité : </span>développeur web fullstack</h3>
+            <h3> <span> Langues : </span>Français, espagnol, un soupçon d'anglais</h3>
+            <a href="https://www.canva.com/design/DAFeN6fLLVk/WvSBM7MvBDolfvX1Xc8O5Q/view?utm_content=DAFeN6fLLVk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"> <button class="btn"> Télecharger le CV <i class="fas fa-download"></i> </button></a>
+        </div>
+        <div class="counter">
+            <div class="box">
+                <span>17+</span>
+                <h3>années d'activité professionnalle dans la santé</h3>
     </div>
-
+    
     <div class="box">
         <span>100+</span>
         <h3>projets de voyage</h3>
     </div>
-
+    
     <div class="box">
         <span>100+</span>
         <h3>envie de bien développer</h3>
     </div>
-
+    
 </div>
 </div>
 </section>
@@ -87,29 +96,29 @@
 
 <section class="formation" id="formation">
     <h1 class="heading"> mes <span>formations</span></h1>
-<div class="box-container">
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2023</span>
-        <h3>développeur web Fullstack</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ab fuga id aspernatur corporis quisquam dolor quaerat obcaecati rerum ut.</p>
-    </div>
-
+    <div class="box-container">
+        
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2023</span>
+            <h3>développeur web Fullstack</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ab fuga id aspernatur corporis quisquam dolor quaerat obcaecati rerum ut.</p>
+        </div>
+        
     <div class="box">
         <i class="fas fa-graduation-cap"></i>
         <span>2022</span>
         <h3>développeur web Fullstack</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ab fuga id aspernatur corporis quisquam dolor quaerat obcaecati rerum ut.</p>
     </div>
-
+    
     <div class="box">
         <i class="fas fa-graduation-cap"></i>
         <span>2021</span>
         <h3>développeur web Fullstack</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ab fuga id aspernatur corporis quisquam dolor quaerat obcaecati rerum ut.</p>
     </div>
-
+    
 </div>
 
 </section>
@@ -120,70 +129,80 @@
 
 <section class="portfolio" id="portfolio">
     <h1 class="heading"> mon <span>portfolio</span></h1>
-<div class="box-container">
-    <div class="box">
-        <img src="images/img1.jpg" alt="">
-    </div>
-    <div class="box">
-        <img src="images/img2.jpg" alt="">
-    </div>
-    <div class="box">
-        <img src="images/img3.jpg" alt="">
-    </div>
-    <div class="box">
-        <img src="images/img4.jpg" alt="">
-    </div>
-    <div class="box">
-        <img src="images/img5.jpg" alt="">
+    <div class="box-container">
+        <div class="box">
+            <a href="https://geraldine-perez.github.io/Invaders/">
+            <img src="images/monstre-poilu.png" alt="">
+            </a>
+        </div>
+        <div class="box">
+            <img src="images/img2.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images/img3.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images/img4.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images/img5.jpg" alt="">
+        </div>
+        
+        
+        
     </div>
     
-
-
-</div>
-
-
+    
 </section>
 
 <!-- portfolio section ends  -->
 
 <!-- contact section starts -->
 <section class="contact" id="contact">
-<h1 class="heading"><span>contactez</span> moi</h1>
-<div class="row">
-    <div class="content">
-        <h3 class="title">informations de contact</h3>
-
-        <div class="info">
-            <h3> <i class="fas fa-envelope"></i> gegelamoroso@gmail.com </h3>
-            <h3> <i class="fas fa-phone"></i> (+33)06 72 48 56 56 </h3>
-            <h3> <i class="fas fa-map-marker-alt"></i> Perpignan, France </h3>
+    <h1 class="heading"><span>contactez</span> moi</h1>
+    <div class="row">
+        <div class="content">
+            <h3 class="title">informations de contact</h3>
+            
+            <div class="info">
+                <h3> <i class="fas fa-envelope"></i> gegelamoroso@gmail.com </h3>
+                <h3> <i class="fas fa-phone"></i> (+33)06 72 48 56 56 </h3>
+                <h3> <i class="fas fa-map-marker-alt"></i> Perpignan, France </h3>
+            </div>
+            
         </div>
-
+        <form action="">
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="text" placeholder="project" class="box">
+            <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+            <button type="submit" class="btn"> envoyer <i class="fas fa-paper-plane"></i></button>
+            
+        </form>
     </div>
-    <form action="">
-        <input type="text" placeholder="name" class="box">
-        <input type="email" placeholder="email" class="box">
-        <input type="text" placeholder="project" class="box">
-        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-        <button type="submit" class="btn"> envoyer <i class="fas fa-paper-plane"></i></button>
-
-    </form>
-</div>
 </section>
 <!-- contact section ends -->
 
 <!-- scroll top button -->
 
-<a href="#home" class="top">
-    <img src="images/van.jpg" alt="">
+    <a href="#home" class="top" >
+        <img src="images/van.jpg" alt="">    
+    </a>
 
-</a>
 
 
- <!-- jquery cdn link -->
+<!-- jquery cdn link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
 <!-- custom js file link -->
 <script src="js/index.js"></script>
+
+
+</main>
 </body>
 </html>
+
+
+/* 
+ajouter aux projets les liens gitHub vers les pages codées et un descriptif des technos utilisées
+*/
