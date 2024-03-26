@@ -304,21 +304,46 @@ header .navbar ul li a:hover {
 
 .portfolio .box-container .box {
    height: 20rem;
-   width: 26rem;
-   border-radius: 1rem;
+   width: 26rem;   
    margin: 2rem;
-   overflow: hidden;
-   cursor: pointer;
+
 }
 
-.portfolio .box-container .box img {
+.portfolio .box-container .box .item {
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    height: 20rem;
+   width: 26rem; 
+}
+.portfolio .box-container .box .item img {
     height: 100%;
     width: 100%;
-    object-fit: 100%;
 }
 
-.portfolio .box-container .box:hover img {
+.portfolio .box-container .box .item:hover img {
     transform: scale(1.2);
+}
+
+.project-details {
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    width: 100%;   
+}
+
+.project-details a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.box-container .box:hover .project-details {
+    opacity: 1;
 }
 
 

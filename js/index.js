@@ -6,44 +6,32 @@
     */ 
 
     const app = {
-
-
-
         init: function() {
             app.toggleMenu();
             console.info('initialization');
-            app.scroll();
         },
-
+        
         toggleMenu: function() {
             const menu = document.getElementById("menu");
-            menu.addEventListener('click', app.toggleMenu);
-            console.log(menu);
-            const header = document.getElementById("bigMenu");
-            menu.classList.toggle("fa-times");
-            header.classList.toggle("toggle");
-        },
-    
-    
-       scroll: function () {
-            let rando = document.getElementById("rando");
-            console.log(rando);
-            let monde = document.getElementById("monde");
-            console.log(monde);
-            window.addEventListener('scroll', function() {
-            let value = window.scrollY;
-            console.log(value);
-            rando.style.position = 'absolute';
-            monde.style.position = 'absolute';
-
-            rando.style.top = (parseInt(-value * 1)) + 'px';
-            monde.style.top = -value * 10 + 'px';
-})
+            menu.addEventListener('click', function() {
+                const header = document.getElementById("bigMenu");
+                
+                if (menu.classList.contains("fa-bars")) {
+                    menu.classList.remove("fa-bars");
+                    menu.classList.add("fa-times");
+                    header.classList.add("toggle");
+                } else {
+                    menu.classList.remove("fa-times");
+                    menu.classList.add("fa-bars");
+                    header.classList.remove("toggle");
+                }
+            });
         }
-        
-        };
+    };
 
     document.addEventListener('DOMContentLoaded', app.init);
+
+
 
     /* 
     Effet parallaxe
