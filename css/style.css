@@ -57,12 +57,6 @@ body {
     padding-left: 35rem;
 }
 
-.parallax img {
-    border-radius: 100%;
-    max-width: 15rem;    
-   
-}
-
 section {
     min-height: 100vh;
     padding: 1rem;
@@ -207,8 +201,8 @@ header .navbar ul li a:hover {
 .about .row .info {
     flex: 1 1 48rem;
     padding: 2rem 1rem;
-    padding-left: 6rem;
-    max-width: 35%;
+    padding-left: 6rem; 
+    max-width: 100%;
 }
 
 .about .row .info h3 {
@@ -303,10 +297,9 @@ header .navbar ul li a:hover {
 }
 
 .portfolio .box-container .box {
-   height: 20rem;
+   height: 70rem;
    width: 26rem;   
    margin: 2rem;
-
 }
 
 .portfolio .box-container .box .item {
@@ -314,12 +307,12 @@ header .navbar ul li a:hover {
     overflow: hidden;
     cursor: pointer;
     height: 20rem;
-   width: 26rem; 
+    width : 26rem; 
 }
-.portfolio .box-container .box .item img {
+ .portfolio .box-container .box .item img {
     height: 100%;
     width: 100%;
-}
+} 
 
 .portfolio .box-container .box .item:hover img {
     transform: scale(1.2);
@@ -335,11 +328,16 @@ header .navbar ul li a:hover {
     bottom: 0;
     left: 0;
     width: 100%;   
+    font-size: 1.5rem;
 }
 
-.project-details a {
-    color: #fff;
-    text-decoration: underline;
+.project-details p strong {
+    color: #1a1a1a;
+}
+
+.project-details a strong {
+    text-decoration: none;
+    color: var(--orange);
 }
 
 .box-container .box:hover .project-details {
@@ -429,7 +427,12 @@ header .navbar ul li a:hover {
     .home {
         padding: 1rem 4rem;
     }
-}
+    .about .row {
+        all: unset;
+        flex-direction: column;
+        text-align: center;
+    }
+}   
 
 @media(max-width:991px){
     header {
@@ -444,12 +447,14 @@ header .navbar ul li a:hover {
     body {
         padding: 0;
     }
+   
 }
 
 @media(max-width:768px){
     html {
         font-size: 50%;
     }
+ 
 }
 
 @media(max-width:400px){
@@ -459,10 +464,11 @@ header .navbar ul li a:hover {
     .heading {
        margin: 0 3rem; 
     }
+ 
     .about .row .counter .box {
         width: 100%;
     }
-.formation .box-container .box {
+    .formation .box-container .box {
         width: 100%;
     }
     .portfolio .box-container .box {
@@ -471,5 +477,4 @@ header .navbar ul li a:hover {
     .contact .row form {
         margin: 3rem 0;
     }
-} 
-
+}
