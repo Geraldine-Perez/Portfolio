@@ -257,6 +257,7 @@ header .navbar ul li a:hover {
     border-left: .2rem solid #fff;
     position: relative;
 }
+
 .formation .box-container .box span {
     font-size: 1.3rem;
     background: #D7263D;
@@ -317,11 +318,13 @@ header .navbar ul li a:hover {
     height: 20rem;
     width : 26rem; 
     padding: 1rem;
+    text-align: center;
 }
  .portfolio .box-container .box .item img {
     height: 100%;
     width: 100%;
     border-radius: 10%;
+    
 } 
 
 .portfolio .box-container .box .item:hover img {
@@ -496,9 +499,7 @@ header .navbar ul li a:hover {
     .formation .box-container .box {
         width: 100%;
     }
-    .portfolio .box-container .box {
-        width: 100%;
-    }
+   
     .contact .row form {
         margin: 3rem 0;
     }
