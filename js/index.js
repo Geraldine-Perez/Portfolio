@@ -31,20 +31,18 @@
         
 
         clickItem: function() {
+            const menu = document.getElementById("menu");
             const header = document.getElementById("bigMenu");
+            const mediaQuery = window.matchMedia('(max-width: 991px)');
             header.addEventListener('click', function() {    
-                const menu = document.getElementById("menu");
-
-                if (menu.style.display === "block") {
+                    if (mediaQuery.matches) {
                     menu.classList.remove("fa-times");
-                    menu.classList.add("fa-bars");
                     header.classList.remove("toggle");
-                    menu.style.display = "none"; // Pour masquer le menu
+                    menu.classList.add("fa-bars");
                                 } else {
                     menu.classList.remove("fa-bars");
                     menu.classList.add("fa-times");
                     header.classList.add("toggle");
-                    menu.style.display = "block"; // Pour afficher le menu
                 };
         })}
         
